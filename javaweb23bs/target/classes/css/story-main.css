@@ -1,0 +1,63 @@
+
+
+.cha{
+    padding: 80px 30px 60px 43px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.title-story{
+    margin-left: 90px;
+    margin-right: auto;
+}
+
+.img-cake{
+    position: relative;
+}
+
+.title1, .title2, .title3{
+    text-align: center;
+    color: #56534c;
+}
+
+.title2{
+    margin-top: 68px;
+}
+
+.title2 h3{
+    line-height: 1.4;
+    font-weight: 200;
+}
+
+.title3{
+    margin-top: 48px;
+}
+
+.hoa{
+    position: absolute;
+    margin-top: 142px;
+    margin-left: 182px;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 87px;
+}
+
+.Art{
+    font-size: 40px;
+    font-weight: 200;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.create{
+    margin-top: 7px;
+    font-size: small;
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--hiển thị chữ hoặc ký tự unicode-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bài 1 html5</title>
+    <!--cấu hình trong sử dụng responsive-->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- khai báo các file css -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- khai báo các file js vd: jquery, bootstrap -->
+    <script src='main.js'></script>
+    <style>
+        .header {
+            height: 150px;
+        }
+
+        .menu {
+            /* height: 50px;  */
+            background-color: brown;
+        }
+        .menu ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+        }
+        .menu ul li{
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: white;
+            padding: 10px 20px;
+        }
+        .menu ul li:hover{
+            background-color: chocolate;
+        }
+
+        .content {
+            /* height: 500px; */
+        }
+
+        .footer {
+            height: 200px;
+            background-color: yellow;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- chứa nd của site hiển thị ra -->
+    <!-- 
+        <the class="" id="" style=""....>Nội dung </the>
+        <the class="" id=""stye"".../>
+     -->
+    <!-- phân chia bố cục trang web -->
+    <div class="header">
+
+    </div>
+    <div class="menu">
+        <!-- dùng để hiển thị các dữ liệu dạng danh sách, chủ yếu dùng để làm menu -->
+        <!-- thẻ a: chứa liên kết giữa các trang sử dụng thuộc tính href= -->
+        <!-- target ="_blank": open ra tab mới của trình duyệt -->
+        <ul>
+            <li>
+                <a target="_blank" href="https://google.com">Home</a>
+            </li>
+            <!-- 
+                1.đường dẫn tuyệt đối: đường dẫn bắt đầu từ gốc đến ngọn
+                2. đường dẫn tương đối
+                -với file đích cùng folder cha với file khai báo
+                ./folder/file
+             -->
+            <li>
+                <a href="./layouts/main.html">Products</a>
+            </li>
+            <li>News</li>
+            <li>Contract</li> 
+        </ul>
+
+    </div>
+    <div class="content">
+        <!-- 
+            1.chữ đậm
+            2.cỡ chữ giảm dần từ h1 -> h6
+
+            dùng trong seo trang web. mức độ quan trọng của các keyword
+            quan trọng nhất dùng h1 -> và giảm dần đến h6
+         -->
+        <h1><center>Bai1 html5</center></h1>
+        <!-- 
+            hiển thị 1 đoạn văn bản
+         -->
+         <!-- thẻ b: in đâm nội dung nó chứa
+            thẻ i: in nghiêng
+            thẻ u: gạch chân
+            thẻ center: căn ra giữa
+            thẻ br: xuống dòng
+         -->
+        <p>
+            <b>The following graph shows the measured </b>rate at which the SUT can successfully forward packets at a given
+            frame size and fixed intended load, versus the effective path loss interposed between the SUT and the
+            WaveTest generated client. The X axis shows the increasing path loss in dB between the client and the SUT,
+            <u>while the Y axis shows the forwarding rate in bps.</u>
+        </p>
+        <center>
+            <!-- hiển thị ảnh -->
+            <img src="./image/sp.jpg">
+        </center>
+        <p>
+            <i>The following graph shows the measured</i> rate at which the SUT can successfully forward packets at a given
+            frame size and fixed intended load, versus the effective path loss interposed between the SUT and the
+            WaveTest generated client. <br/>The X axis shows the increasing path loss in dB between the client and the SUT,
+            while the Y axis shows the forwarding rate in bps.
+        </p>
+        <p>
+            <span>The following graph shows the</span> measured rate at which the SUT can successfully forward packets at a given
+            frame size and fixed intended load, versus the effective path loss interposed between the SUT and the
+            WaveTest generated client. The X axis shows the increasing path loss in dB between the client and the SUT,
+            while the Y axis shows the forwarding rate in bps.
+        </p>
+    </div>
+</body>
+
+</html>
